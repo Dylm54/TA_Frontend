@@ -1,4 +1,4 @@
-import { SEVERITY_STEPS, SEVERITY_CONFIG } from "../constants/SeverityConfig.js";
+import { SEVERITY_STEPS, SEVERITY_CONFIG } from "../constants/severityConfig";
 import styles from "../styles/SeverityBar.module.css";
 
 export default function SeverityBar({ activeStep }) {
