@@ -1,0 +1,72 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    max-width: 420px;
+    margin: 0 auto;
+    padding-top: 8px;
+    animation: fadeUp 0.3s ease;
+  }
+  
+  .title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--c-text);
+  }
+  
+  .imgWrap {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .img {
+    width: 220px;
+    height: 265px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    border: 3px solid var(--c-green);
+    display: block;
+    box-shadow: 0 4px 24px rgba(39, 200, 133, 0.20);
+  }
+  
+  .checkBadge {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--c-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--c-bg);
+  }
+  
+  .btnPrimary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--c-orange);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: var(--shadow-orange);
+  }
+  
+  .backLink {
+    background: none;
+    border: none;
+    color: var(--c-text-sub);
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: inherit;
+  }

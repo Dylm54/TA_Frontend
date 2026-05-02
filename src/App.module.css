@@ -1,0 +1,55 @@
+.root {
+    min-height: 100vh;
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 32px 20px 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2200px;
+    animation: fadeUp 0.35s ease;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 14px 24px;
+    font-size: 11px;
+    color: var(--c-text-sub);
+    border-top: 1px solid var(--c-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--c-surface);
+  }
+  
+  .footerDot {
+    color: var(--c-border);
+  }
+  
+  .errorBanner {
+    color: #e03e3e;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes pulseRing {
+    0%,  100% { box-shadow: 0 0 0 0   rgba(252, 126, 61, 0.3); }
+    50%        { box-shadow: 0 0 0 12px rgba(252, 126, 61, 0); }
+  }

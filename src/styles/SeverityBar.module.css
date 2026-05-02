@@ -1,0 +1,28 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .track {
+    display: flex;
+    gap: 4px;
+    height: 7px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .segment {
+    flex: 1;
+    transition: background 0.3s;
+  }
+  
+  .labels {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .label {
+    font-size: 11px;
+    transition: color 0.3s;
+  }

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Keyframes ── */
+
+
+/* ── Layout helpers ── */
+.landing-cards { flex-direction: row; }
+.landing-card  { flex: 1; }
+
+@media (max-width: 600px) {
+  .landing-cards { flex-direction: column !important; }
+  .landing-card  { width: 100% !important; }
+}
+
+.tips-wrap { flex-direction: row; }
+
+@media (max-width: 680px) {
+  .tips-wrap { flex-direction: column !important; gap: 28px !important; }
+}
+
+.result-grid { flex-direction: row; }
+
+@media (max-width: 800px) {
+  .result-grid { flex-direction: column !important; }
+}
+
+@media (max-width: 600px) {
+  .legend-strip {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    border-radius: 14px !important;
+  }
+  .legend-chips {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+}

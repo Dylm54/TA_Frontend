@@ -1,0 +1,47 @@
+:root {
+    --c-orange: #fc7e3d;
+    --c-orange-hover: #e86c2c;
+    --c-orange-light: rgba(252, 126, 61, 0.10);
+    --c-orange-border: rgba(252, 126, 61, 0.25);
+    --c-green: #27c885;
+    --c-green-light: rgba(39, 200, 133, 0.10);
+    --c-green-border: rgba(39, 200, 133, 0.25);
+  
+    --c-white: #ffffff;
+    --c-black: #000000;
+    --c-bg: #f8f7f5;
+    --c-surface: #ffffff;
+    --c-surface-alt: #f0f1f3;
+    --c-border: rgba(0, 0, 0, 0.08);
+    --c-border-mid: rgba(0, 0, 0, 0.13);
+  
+    --c-text: #111111;
+    --c-text-mid: #444444;
+    --c-text-sub: #888888;
+    --c-text-faint: #bbbbbb;
+  
+    --c-nav-bg: rgba(255, 255, 255, 0.92);
+  
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 18px;
+    --radius-full: 9999px;
+  
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+    --shadow-orange: 0 3px 14px rgba(252, 126, 61, 0.30);
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes pulseRing {
+    0%,  100% { box-shadow: 0 0 0 0   rgba(252, 126, 61, 0.3); }
+    50%        { box-shadow: 0 0 0 12px rgba(252, 126, 61, 0); }
+  }

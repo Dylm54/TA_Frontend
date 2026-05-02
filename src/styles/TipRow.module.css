@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .badge {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--c-green-light);
+    border: 1px solid var(--c-green-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: var(--c-text-mid);
+    line-height: 1.5;
+    font-weight: 700;
+  }

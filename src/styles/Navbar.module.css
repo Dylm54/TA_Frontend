@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 56px;
+    border-bottom: 1px solid var(--c-border);
+    background: var(--c-nav-bg);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logoIcon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--c-orange-light);
+    border: 1px solid var(--c-orange-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoText {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--c-text);
+    letter-spacing: -0.02em;
+  }
