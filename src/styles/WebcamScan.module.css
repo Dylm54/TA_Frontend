@@ -225,3 +225,17 @@
     padding: 8px 18px;
     width: 85%;
   }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes pulseRing {
+    0%,  100% { box-shadow: 0 0 0 0   rgba(252, 126, 61, 0.3); }
+    50%        { box-shadow: 0 0 0 12px rgba(252, 126, 61, 0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
