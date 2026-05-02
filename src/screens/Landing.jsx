@@ -1,6 +1,6 @@
 import { useScan } from "../context/ScanContext";
 import { IcoCamera, IcoUpload, IcoArrow } from "../components/icons";
-import styles from "../styles/landing.module.css";
+import styles from "../styles/Landing.module.css";
 
 export default function Landing() {
   const { go } = useScan();

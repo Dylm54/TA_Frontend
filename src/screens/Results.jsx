@@ -1,5 +1,5 @@
 import { useScan } from "../context/ScanContext";
-import { SEVERITY_CONFIG, SEVERITY_STEPS } from "../constants/SeverityConfig";
+import { SEVERITY_CONFIG, SEVERITY_STEPS } from "../constants/severityConfig";
 import SeverityBar from "../components/SeverityBar";
 import StatCard from "../components/StatCard";
 import { IcoInfo, IcoReset } from "../components/icons";

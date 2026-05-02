@@ -2,7 +2,7 @@ import { useScan } from "../context/ScanContext";
 import { useUpload } from "../hooks/useUpload";
 import TipRow from "../components/TipRow";
 import { IcoUpload } from "../components/icons";
-import { TIPS } from "../constants/Tips";
+import { TIPS } from "../constants/tips";
 import styles from "../styles/UploadPick.module.css";
 
 export default function UploadPick() {

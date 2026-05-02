@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useScan } from "../context/ScanContext";
-import { useWebcam } from "../hooks/UseWebcam";
+import { useWebcam } from "../hooks/useWebcam";
 import { predictAcne } from "../services/api";
 import { IcoCamera } from "../components/icons";
 import styles from "../styles/WebcamScan.module.css";

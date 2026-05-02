@@ -1,7 +1,7 @@
 import { useScan } from "../context/ScanContext";
 import TipRow from "../components/TipRow";
 import { IcoCamera, IcoUpload } from "../components/icons";
-import { TIPS } from "../constants/Tips.js";
+import { TIPS } from "../constants/tips.js";
 import styles from "../styles/TipsScreen.module.css";
 
 export default function TipsScreen({ mode }) {
