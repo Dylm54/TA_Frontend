@@ -30,7 +30,7 @@ body {
 .tips-wrap { flex-direction: row; }
 
 @media (max-width: 680px) {
-  .tips-wrap { flex-direction: column !important; gap: 28px !important; }
+  .tips-wrap { flex-direction: column !important; gap: 32px !important; }
 }
 
 .result-grid { flex-direction: row; }

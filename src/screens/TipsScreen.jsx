@@ -8,7 +8,7 @@ export default function TipsScreen({ mode }) {
   const { go } = useScan();
 
   const isWebcam = mode === "webcam";
-  const backScreen = isWebcam ? "landing" : "landing";
+  const backScreen = isWebcam ? "intro" : "webcam_tips";
   const primaryScreen = isWebcam ? "webcam_scan" : "upload_pick";
 
   return (
@@ -35,7 +35,7 @@ export default function TipsScreen({ mode }) {
             {isWebcam ? <><IcoCamera /> Start scan</> : <><IcoUpload /> Select a file</>}
           </button>
           {isWebcam && (
-            <button className={styles.btnGhost} onClick={() => go("upload_tips")}>
+            <button className={styles.btnGhost} onClick={() => go("upload_pick")}>
               <IcoUpload /> Upload a selfie
             </button>
           )}

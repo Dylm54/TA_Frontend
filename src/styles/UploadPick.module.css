@@ -1,25 +1,26 @@
 .wrap {
     display: flex;
-    gap: 44px;
+    gap: 48px;
     align-items: flex-start;
-    max-width: 820px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding-top: 4px;
+    padding: 24px 8px;
     animation: fadeUp 0.3s ease;
+    justify-content: space-between;
   }
-  
+
   .left {
-    flex: 0 0 280px;
+    flex: 0 0 380px;
     min-width: 0;
   }
-  
+
   .right {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
     min-width: 0;
-    margin-top: 20px;
+    max-width: 570px;
   }
   
   .back {
@@ -38,48 +39,50 @@
   
   .heading {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 22px;
+    font-size: clamp(26px, 4.2vw, 38px);
     font-weight: 700;
     color: var(--c-text);
-    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 24px;
   }
-  
+
   .tipsList {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
   }
-  
+
   .uploadZone {
     background: var(--c-surface-alt);
     border: 2px dashed var(--c-border);
     border-radius: var(--radius-lg);
-    padding: 36px 24px;
+    padding: 48px 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     cursor: pointer;
     transition: border-color 0.2s;
   }
-  
+
   .uploadZone:hover {
     border-color: var(--c-orange);
   }
-  
+
   .uploadTitle {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--c-text);
-    margin-top: 6px;
+    margin-top: 10px;
   }
-  
+
   .uploadSub {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--c-text-sub);
-    margin-top: 2px;
+    margin-top: 4px;
   }
-  
+
   .btnPrimary {
     display: flex;
     align-items: center;
@@ -87,12 +90,34 @@
     background: var(--c-orange);
     color: #fff;
     border: none;
-    border-radius: 10px;
-    padding: 12px 22px;
+    border-radius: 12px;
+    padding: 14px 28px;
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
     font-family: inherit;
-    box-shadow: var(--shadow-orange);
-    margin-top: 16px;
+    /* box-shadow: var(--shadow-orange); */
+    margin-top: 20px;
+  }
+
+  @media (max-width: 680px) {
+    .left {
+      flex: 1 1 auto;
+    }
+    .right {
+      gap: 16px;
+      width: 100%
+    }
+    .heading {
+      margin-bottom: 16px;
+    }
+    .uploadZone {
+      width: 100%;
+      padding: 36px 20px;
+    }
+    .btnPrimary {
+      width: 100%;
+      justify-content: center;
+      margin-top: 16px;
+    }
   }

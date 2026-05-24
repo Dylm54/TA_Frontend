@@ -1,5 +1,7 @@
+import { IcoMakeup, IcoGlasses, IcoSun } from "../components/icons";
+
 export const TIPS = [
-    { emoji: "💄", label: "Remove makeup and move hair away from face" },
-    { emoji: "👓", label: "Remove glasses" },
-    { emoji: "☀️", label: "Use natural lighting if possible" },
-  ];
+  { icon: IcoMakeup,  label: "Remove makeup and move hair away from face" },
+  { icon: IcoGlasses, label: "Remove glasses" },
+  { icon: IcoSun,     label: "Use natural lighting if possible" },
+];

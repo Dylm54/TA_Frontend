@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { ScanProvider, useScan } from "./context/ScanContext";
 import Navbar from "./components/Navbar";
+import Intro from "./screens/Intro";
 import Landing from "./screens/Landing";
 import TipsScreen from "./screens/TipsScreen";
 import WebcamScan from "./screens/WebcamScan";
@@ -13,10 +15,15 @@ import styles from "./App.module.css";
 function AppScreens() {
   const { screen, apiError, apiResult } = useScan();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [screen]);
+
   return (
     <div className={styles.root}>
       <Navbar />
       <main className={styles.main} key={screen}>
+        {screen === "intro"          && <Intro />}
         {screen === "landing"        && <Landing />}
         {screen === "webcam_tips"    && <TipsScreen mode="webcam" />}
         {screen === "webcam_scan"    && <WebcamScan />}

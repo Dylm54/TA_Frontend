@@ -99,7 +99,7 @@ export default function WebcamScan() {
   return (
     <div className={styles.desktopWrap}>
       <div className={styles.guideBar}>
-        <span style={{ fontSize: 18 }}>👤</span>
+        {/* <span style={{ fontSize: 18 }}>👤</span> */}
         <span className={styles.guideText}>
           Position your face within the oval frame, make sure there is enough light, and then tap{" "}
           <strong style={{ color: "var(--c-text)" }}>Capture Photo</strong> when you're ready.

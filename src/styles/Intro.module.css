@@ -1,0 +1,147 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 8px;
+}
+
+.heroVisual {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--c-surface-alt);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.heroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: var(--c-orange);
+  background: var(--c-orange-light);
+  border: 1px solid var(--c-orange-border);
+  border-radius: var(--radius-full);
+  padding: 4px 12px;
+  margin-bottom: 10px;
+}
+
+.kicker {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--c-text-sub);
+  margin-bottom: 12px;
+}
+
+.h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(26px, 4.2vw, 38px);
+  font-weight: 700;
+  color: var(--c-text);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--c-text-mid);
+  line-height: 1.75;
+  margin-bottom: 22px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--c-orange);
+  color: var(--c-white);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  transition: transform 0.15s, background 0.15s;
+  margin-bottom: 24px;
+}
+
+.cta:hover {
+  background: var(--c-orange);
+  transform: translateY(-1px);
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bulletBadge {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--c-green-border);
+  border: 1px solid var(--c-green-border);
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bulletText {
+  font-size: 14px;
+  color: var(--c-text-mid);
+  line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 16px 8px;
+  }
+
+  .heroVisual {
+    aspect-ratio: 16 / 10;
+    max-height: 280px;
+  }
+
+  .cta {
+    padding: 13px 22px;
+  }
+}

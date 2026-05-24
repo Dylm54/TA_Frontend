@@ -37,3 +37,32 @@ export const IcoCamera = ({ size = 20 }) => (
       <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
+
+  export const IcoMakeup = ({ size = 22 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <path d="M10 9l2-4 2 4v3h-4V9z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+      <rect x="8" y="12" width="8" height="9" rx="1.6" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M8 16h8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+
+  export const IcoGlasses = ({ size = 22 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <circle cx="6.5" cy="14" r="3.5" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="17.5" cy="14" r="3.5" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M10 14h4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+      <path d="M3 14l1.5-4M21 14l-1.5-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+
+  export const IcoSun = ({ size = 22 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" />
+      <path
+        d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
