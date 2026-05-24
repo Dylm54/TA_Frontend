@@ -67,7 +67,7 @@ export default function WebcamScan() {
         {!analyzing && (
           <div className={styles.mobileGuide}>
             <span className={styles.mobileGuideText}>
-              Posisikan wajah di dalam lingkaran, lalu tekan tombol capture
+            Position your face inside the circle, then press the capture button
             </span>
           </div>
         )}

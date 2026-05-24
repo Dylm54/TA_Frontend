@@ -31,14 +31,20 @@
     gap: 8px;
     background: var(--c-orange);
     color: #fff;
-    border: none;
+    border: 1px solid var(--c-orange);
     border-radius: 10px;
     padding: 12px 22px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     font-family: inherit;
+    transition: background 0.15s ease, color 0.15s ease;
     /* box-shadow: var(--shadow-orange); */
+  }
+
+  .btnPrimary:hover {
+    background: var(--c-white);
+    color: var(--c-orange);
   }
   
   .backLink {
