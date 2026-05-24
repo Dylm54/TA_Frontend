@@ -39,6 +39,18 @@ function AppScreens() {
         <span>© 2026 AcneScan AI.</span>
         <span className={styles.footerDot}>·</span>
         <span>Not a substitute for professional medical advice.</span>
+        <span className={styles.footerDot}>·</span>
+        <span>
+          Hayashi grading:{" "}
+          <a
+            className={styles.footerLink}
+            href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1346-8138.2007.00403.x-i1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hayashi N. et al. (2008)
+          </a>
+        </span>
       </footer>
     </div>
   );

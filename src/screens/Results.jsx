@@ -90,6 +90,17 @@ export default function Results() {
               </span>
             </div>
             <p className={styles.detailText}>{cfg.description}</p>
+            <p className={styles.detailSource}>
+              Source:{" "}
+              <a
+                className={styles.detailSourceLink}
+                href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1346-8138.2007.00403.x-i1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hayashi N. et al. (2008). <i>J Dermatol</i>, 35(5), 255–260.
+              </a>
+            </p>
           </div>
 
           {/* Reset */}
