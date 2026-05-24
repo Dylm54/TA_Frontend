@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const ScanContext = createContext(null);
 
 export function ScanProvider({ children }) {
-  const [screen, setScreen]           = useState("landing");
+  const [screen, setScreen]           = useState("intro");
   const [uploadFile, setUploadFile]   = useState(null);
   const [uploadPreview, setUploadPreview] = useState(null);
   const [scanPreview, setScanPreview] = useState(null);
@@ -21,7 +21,7 @@ export function ScanProvider({ children }) {
     setScanPreview(null);
     setApiResult(null);
     setApiError(null);
-    setScreen("landing");
+    setScreen("webcam_tips");
   };
 
   return (

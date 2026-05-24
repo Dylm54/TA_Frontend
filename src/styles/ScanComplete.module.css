@@ -58,7 +58,7 @@
     font-weight: 700;
     cursor: pointer;
     font-family: inherit;
-    box-shadow: var(--shadow-orange);
+    /* box-shadow: var(--shadow-orange); */
   }
   
   .backLink {

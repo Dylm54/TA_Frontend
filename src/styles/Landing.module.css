@@ -39,6 +39,31 @@
     color: var(--c-text-mid);
     line-height: 1.75;
   }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--c-text-sub);
+    line-height: 1.5;
+    margin-top: 4px;
+  }
+
+  .back {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: var(--c-text-sub);
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+  }
+
+  .back:hover {
+    color: var(--c-text);
+  }
   
   .cards {
     display: flex;

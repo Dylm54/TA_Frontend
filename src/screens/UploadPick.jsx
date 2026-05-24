@@ -12,7 +12,7 @@ export default function UploadPick() {
   return (
     <div className={`tips-wrap ${styles.wrap}`}>
       <div className={styles.left}>
-        <button className={styles.back} onClick={() => go("upload_tips")}>← Back</button>
+        <button className={styles.back} onClick={() => go("webcam_tips")}>← Back</button>
         <h2 className={styles.heading}>Upload Selfie</h2>
         <div className={styles.tipsList}>
           {TIPS.map((t, i) => <TipRow key={i} {...t} />)}

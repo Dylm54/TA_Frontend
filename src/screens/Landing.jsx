@@ -7,15 +7,10 @@ export default function Landing() {
 
   return (
     <div className={styles.wrap}>
+      <button className={styles.back} onClick={() => go("intro")}>← Back</button>
       <div className={styles.hero}>
-        <div className={styles.chip}>Hayashi Grading Scale</div>
-        <h1 className={styles.h1}>
-          Acne Severity<br />Classification
-        </h1>
-        <p className={styles.desc}>
-          Our AI model detects acne lesions and classifies severity using the
-          clinical Hayashi grading scale. Begin your skin analysis below.
-        </p>
+        <h1 className={styles.h1}>Choose how to scan</h1>
+        <p className={styles.subtitle}>Pick a capture method to begin</p>
       </div>
 
       <div className={`landing-cards ${styles.cards}`}>
