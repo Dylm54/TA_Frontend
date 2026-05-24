@@ -29,8 +29,8 @@
     gap: 4px;
     background: none;
     border: none;
-    color: var(--c-text-sub);
-    font-size: 13px;
+    color: black;
+    font-size: 16px;
     cursor: pointer;
     font-family: inherit;
     margin-bottom: 16px;
@@ -89,15 +89,21 @@
     gap: 8px;
     background: var(--c-orange);
     color: #fff;
-    border: none;
+    border: 1px solid var(--c-orange);
     border-radius: 12px;
     padding: 14px 28px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     font-family: inherit;
     /* box-shadow: var(--shadow-orange); */
     margin-top: 20px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .btnPrimary:hover {
+    background: var(--c-white);
+    color: var(--c-orange);
   }
 
   @media (max-width: 680px) {

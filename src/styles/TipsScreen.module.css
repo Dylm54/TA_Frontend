@@ -30,8 +30,8 @@
     gap: 4px;
     background: none;
     border: none;
-    color: var(--c-text-sub);
-    font-size: 13px;
+    color: black;
+    font-size: 16px;
     cursor: pointer;
     font-family: inherit;
     margin-bottom: 16px;
@@ -55,15 +55,15 @@
   }
 
   .consentCard {
-    background: var(--c-white);
-    border: 1px solid var(--c-border);
+    background: rgba(237, 237, 237);
+    /* border: 1px solid var(--c-border); */
     border-radius: var(--radius-md);
     padding: 20px;
   }
 
   .consentText {
     font-size: 14px;
-    color: var(--c-text-mid);
+    color: black;
     line-height: 1.75;
   }
   
@@ -82,14 +82,20 @@
     gap: 8px;
     background: var(--c-orange);
     color: #fff;
-    border: none;
+    border: 1px solid var(--c-orange);
     border-radius: 12px;
     padding: 14px 28px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     font-family: inherit;
+    transition: background 0.15s ease, color 0.15s ease;
     /* box-shadow: var(--shadow-orange); */
+  }
+
+  .btnPrimary:hover {
+    background: var(--c-white);
+    color: var(--c-orange);
   }
 
   .btnGhost {
@@ -100,14 +106,21 @@
     justify-content: center;
     gap: 8px;
     background: var(--c-surface);
-    color: var(--c-text-mid);
-    border: 1px solid var(--c-border-mid);
+    color: var(--c-orange);
+    border: 1px solid var(--c-orange);
     border-radius: 12px;
     padding: 14px 28px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
     font-family: inherit;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .btnGhost:hover {
+    background: var(--c-orange);
+    color: var(--c-white);
+    border-color: var(--c-orange);
   }
 
   @media (max-width: 680px) {

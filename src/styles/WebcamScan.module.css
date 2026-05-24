@@ -64,7 +64,7 @@
     gap: 10px;
     background: var(--c-orange);
     color: #fff;
-    border: none;
+    border: 1px solid var(--c-orange);
     border-radius: var(--radius-md);
     padding: 14px 32px;
     font-size: 15px;
@@ -72,7 +72,12 @@
     cursor: pointer;
     font-family: inherit;
     /* box-shadow: 0 4px 20px rgba(252, 126, 61, 0.35); */
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, background 0.15s ease, color 0.15s ease;
+  }
+
+  .captureBtn:hover {
+    background: var(--c-white);
+    color: var(--c-orange);
   }
   
   .backLink {

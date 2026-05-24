@@ -45,9 +45,9 @@
 }
 
 .kicker {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
-  color: var(--c-text-sub);
+  color: black;
   margin-bottom: 12px;
 }
 
@@ -74,22 +74,22 @@
   gap: 8px;
   background: var(--c-orange);
   color: var(--c-white);
-  border: none;
+  border: 1px solid var(--c-orange);
   border-radius: 12px;
   padding: 14px 28px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   width: 100%;
   justify-content: center;
-  transition: transform 0.15s, background 0.15s;
+  transition: background 0.15s ease, color 0.15s ease;
   margin-bottom: 24px;
 }
 
 .cta:hover {
-  background: var(--c-orange);
-  transform: translateY(-1px);
+  background: var(--c-white);
+  color: var(--c-orange);
 }
 
 .bulletList {
@@ -137,7 +137,6 @@
   }
 
   .heroVisual {
-    aspect-ratio: 16 / 10;
     max-height: 280px;
   }
 
